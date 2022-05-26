@@ -1,1 +1,15 @@
-@use "./styles/base/reset";
+@import "./styles/utils/variables";
+@import "./styles/utils/breakpoints";
+@import "./styles/utils/utilities";
+
+@import "./styles/base/typography";
+@import "./styles/base/reset";
+
+@import "./styles/components/header";
+@import "./styles/components/hero";
+@import "./styles/components/services";
+@import "./styles/components/process";
+@import "./styles/components/faqs";
+@import "./styles/components/action";
+@import "./styles/components/contact";
+@import "./styles/components/footer";
