@@ -1,0 +1,33 @@
+p {
+  line-height: 27px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @include md {
+    font-size: 32px;
+  }
+}
+
+input {
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.text-area {
+  height: 80px;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
