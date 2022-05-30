@@ -30,7 +30,9 @@ const FAQS = () => {
     <div className="faqs" id='faqs'>
       <h3>Frequently Asked Questions</h3>
       {data.map(({title, content}) => (
+        <React.Fragment key={title}>
          <Accordion title={title} content={content} />
+        </React.Fragment>
       ))}
       <h4>Still have questions?</h4>
       <p>If you cannot find answer to your question in our FAQ, you can always contact us. We will always be here to answer you!</p>

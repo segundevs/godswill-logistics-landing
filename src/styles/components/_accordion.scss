@@ -14,6 +14,10 @@
     cursor: pointer;
     padding: 10px;
 
+    .title {
+      line-height: 27px;
+    }
+
     .is_active {
       color: $primary-color;
     }
