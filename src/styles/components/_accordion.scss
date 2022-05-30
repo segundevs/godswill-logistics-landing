@@ -1,0 +1,30 @@
+.accordion {
+  border: 1px solid $secondary-color;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  &.active-color {
+    border: 1px solid $primary-color;
+  }
+
+  &_title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+
+    .is_active {
+      color: $primary-color;
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+  }
+
+  &_content {
+    padding: 10px;
+    line-height: 27px;
+  } 
+}
