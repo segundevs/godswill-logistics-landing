@@ -1,0 +1,67 @@
+.process {
+  background-color: $black;
+  color: $white;
+  
+
+  h3 {
+    padding: 20px;
+    text-align: center;
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+      flex-direction: row;
+    }
+
+    .process {
+      order: 2;
+      width: 100%;
+      height: 100%;
+      margin-top: 40px;
+
+      @include md {
+        order: 1;
+        width: 50%;
+      }
+    }
+
+    &-procedure {
+      width: 80%;
+      margin-inline: auto;
+      order: 1;
+    
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 30px;
+        width: 80%;
+        margin-inline: auto;
+
+        .img-container {
+          background-color: $primary-color;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          padding: 10px;
+          margin-bottom: 10px;
+
+          img {
+            width: 90%;
+            height: 100%;
+          }
+        }
+
+        h4 {
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
