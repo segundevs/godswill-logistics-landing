@@ -1,0 +1,139 @@
+.header {
+  height: 60px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  color: $black;
+  z-index: 1;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  &_content {
+    width: min(90%, 1920px);
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @include md {
+      padding: 0 32px;
+    }
+
+    transition: 0.3s ease padding;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &>div {
+      flex: 1;
+      white-space: nowrap;
+
+      &:nth-child(2) {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+
+        margin-right: 16px;
+      }
+
+      &:last-of-type {
+        display: flex;
+        justify-content: flex-end;
+        flex: 0;
+      }
+    }
+  }
+
+  &_toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @include md {
+      display: none;
+    }
+
+    &>svg {
+      display: block;
+      font-size: 26px;
+    }
+  }
+
+  @include md {
+    height: 72px;
+    box-shadow: none;
+  }
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  background-color: $white;
+  text-align: center;
+  padding: 16px;
+  
+
+  &-open {
+    transition: 0.2s ease right;
+    right: 0;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 0px 0px;
+  }
+
+  &_item {
+    display: block;
+    padding: 16px 0;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    transition: 0.3s ease color;
+    text-align: left;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  @include md {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: initial;
+    width: auto;
+    padding: 0;
+
+    &-open {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      box-shadow: none;
+    }
+
+    &_item {
+      text-align: center;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &_button_container {
+    @include md {
+      display: none;
+    }
+
+    padding: 16px;
+  }
+}
