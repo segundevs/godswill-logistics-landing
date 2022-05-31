@@ -24,7 +24,7 @@
     }
 
     &-sec {
-      background-color: $secondary-color;
+      background-color: $gray;
       margin: 10px 0;
       padding: 10px;
       border-radius: 20px;
@@ -70,7 +70,15 @@
 
     img {
       width: 100%;
-      height: 100%;
+      height: 90%;
+
+      @include sm {
+        height: 550px;
+      }
+
+      @include md {
+        height: 100%;
+      }
     }
   }
   
