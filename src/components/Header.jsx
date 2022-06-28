@@ -1,6 +1,7 @@
 import React from "react";
 import { CgCloseO, CgMenu } from 'react-icons/cg';
 import logo from '../assets/logo.jpg';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = React.useState(false);
@@ -20,18 +21,18 @@ const Header = () => {
                 </div>
                 <div>
                     <nav className={menuOpen ? 'nav-open nav' : 'nav'}>
-                        <a className="nav_item" href="#home" onClick={menuToggler}>
+                        <Link className="nav_item" to="/#home" onClick={menuToggler}>
                             Home
-                        </a>
-                        <a className="nav_item" href="#services" onClick={menuToggler}>
+                        </Link>
+                        <Link className="nav_item" to="/#services" onClick={menuToggler}>
                             Services
-                        </a>
-                        <a className="nav_item" href="#faqs" onClick={menuToggler}>
+                        </Link>
+                        <Link className="nav_item" to="/#faqs" onClick={menuToggler}>
                             FAQ
-                        </a>
-                        <a className="nav_item" href="#contact" onClick={ menuToggler}>
+                        </Link>
+                        <Link className="nav_item" to="/#contact" onClick={ menuToggler}>
                             Contact us
-                        </a>
+                        </Link>
                     </nav>
                 </div>
                 <div>

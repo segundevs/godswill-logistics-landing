@@ -8,13 +8,17 @@ import FAQS from './components/FAQS';
 import Action from './components/Action';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Policy from './components/Policy';
 
 function App() {
 
   return (
     <React.Fragment>
       <Header />
-        <main className="container">
+      <Routes>
+      <Route path="/" element={<>
+      <main className="container">  
           <Hero />
           <Services />
           <Process />
@@ -22,6 +26,9 @@ function App() {
           <Action />
           <Contact />
         </main>
+      </>}/>
+      <Route path="/policy" element={<Policy />}/>
+      </Routes>
       <Footer />
     </React.Fragment>
   )

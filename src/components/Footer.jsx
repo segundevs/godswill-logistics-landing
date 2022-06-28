@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo2.svg';
 import { IoLogoFacebook, IoLogoInstagram, IoLogoWhatsapp } from 'react-icons/io5';
 
@@ -15,10 +16,11 @@ const Footer = () => {
       </div>
 
       <div className="footer_links">
-        <a href="#hero">Home</a>
-        <a href="#services">Services</a>
-        <a href="#faqs">FAQ</a>
-        <a href="#contact">Contact us</a>
+        <Link to="/#hero">Home</Link>
+        <Link to="/#services">Services</Link>
+        <Link to="/#faqs">FAQ</Link>
+        <Link to="/#contact">Contact us</Link>
+        <Link to="/policy">Privacy & Policy</Link>
       </div>
 
       <div className="footer_social-links">
