@@ -31,7 +31,7 @@ const Hero = () => {
         <h1>The <span className='colored-text'>faster <br /> than light</span> delivery <br />service</h1>
         <p>An ideal way to deliver your goods and <br /> packages</p>
         
-        <a href="#" target="_blank">
+        <a href="https://play.google.com/store/apps/details?id=com.thirdwinter.mrwills.customer" target="_blank">
           <img src={playstore} alt="playstore-link" />
         </a>
       </div>

@@ -10,7 +10,7 @@ const Action = () => {
         <div className="action_content-text">
           <h4>Stress free delivery</h4>
           <p>We provide an ideal way to deliver your packages, it only takes a few minutes to start enjoying a seamless delivery service.</p>
-          <a href="#" target="_blank">
+          <a href="https://play.google.com/store/apps/details?id=com.thirdwinter.mrwills.customer" target="_blank">
             <img src={playstore} alt="playstore" className='playstore'/>
           </a>
         </div>
