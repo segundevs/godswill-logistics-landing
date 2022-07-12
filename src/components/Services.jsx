@@ -41,7 +41,7 @@ const Services = () => {
               </div>
               <div>
                 <h4>City Delivery</h4>
-                <p>We deliver to any city within Rivers State</p>
+                <p>We deliver to any city within Edo State</p>
               </div>
             </div>
             <div className="services_content-offer-item">
